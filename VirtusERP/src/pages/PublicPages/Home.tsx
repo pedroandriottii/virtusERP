@@ -1,9 +1,10 @@
+import Navbar from '@/components/base/navbar';
 import React from 'react';
 
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Welcome to VirtusERP</h1>
+      <Navbar />
     </div>
   );
 };
