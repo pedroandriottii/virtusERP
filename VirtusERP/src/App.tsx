@@ -1,9 +1,15 @@
-function App() {
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './app/Home';
+import About from './app/About';
 
+function App() {
   return (
-    <div className="text-green-700">
-      Ola
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </Router>
   )
 }
 
